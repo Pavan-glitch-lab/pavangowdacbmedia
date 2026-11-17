@@ -1,186 +1,56 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pavan Gowda C B - Computer Science Engineering Student and Developer Portfolio">
-  <title>Pavan Gowda C B | Developer Portfolio</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: Arial, sans-serif;
-      background: #0b1020;
-      color: #e8edf7;
-      line-height: 1.7;
-    }
-    a { color: inherit; text-decoration: none; }
-    .container { width: min(1100px, 90%); margin: auto; }
-    header {
-      position: sticky; top: 0; z-index: 10;
-      background: #0b1020ee; border-bottom: 1px solid #26304a;
-    }
-    nav {
-      min-height: 70px; display: flex;
-      align-items: center; justify-content: space-between; gap: 20px;
-    }
-    .logo { font-size: 21px; font-weight: bold; color: #65d5ff; }
-    nav ul { display: flex; gap: 22px; list-style: none; flex-wrap: wrap; }
-    nav a:hover, .accent { color: #65d5ff; }
-    .hero {
-      min-height: 570px; display: flex;
-      flex-direction: column; justify-content: center;
-      align-items: flex-start; padding: 90px 0;
-    }
-    .tag { color: #65d5ff; font-weight: bold; letter-spacing: 2px; }
-    h1 { font-size: clamp(38px, 7vw, 66px); line-height: 1.15; margin: 18px 0; }
-    .hero p { color: #aab6ce; max-width: 650px; font-size: 18px; }
-    .buttons { display: flex; gap: 14px; margin-top: 28px; flex-wrap: wrap; }
-    .btn {
-      display: inline-block; padding: 11px 22px;
-      border: 1px solid #65d5ff; border-radius: 7px;
-      color: #65d5ff; font-weight: bold;
-    }
-    .btn.primary { background: #65d5ff; color: #08111f; }
-    section { padding: 65px 0; }
-    .section-title { font-size: 30px; margin-bottom: 25px; }
-    .section-title span { color: #65d5ff; }
-    .about-text { max-width: 800px; color: #b8c3d8; }
-    .grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 18px;
-    }
-    .card {
-      background: #131c31; border: 1px solid #263653;
-      border-radius: 12px; padding: 22px;
-    }
-    .card h3 { color: #65d5ff; margin-bottom: 10px; }
-    .card p { color: #b8c3d8; }
-    .skills { display: flex; flex-wrap: wrap; gap: 12px; }
-    .skill {
-      background: #17243b; border: 1px solid #304663;
-      color: #bcecff; padding: 9px 16px; border-radius: 30px;
-    }
-    .contact-links { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px; }
-    footer {
-      border-top: 1px solid #26304a; text-align: center;
-      padding: 25px; color: #94a3b8;
-    }
-    @media (max-width: 650px) {
-      nav { padding: 15px 0; align-items: flex-start; flex-direction: column; }
-      nav ul { gap: 12px; font-size: 14px; }
-      .hero { min-height: 480px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pavan Gowda C B — Computer Science Engineering student, developer and AI enthusiast.">
+<meta name="theme-color" content="#080b14">
+<title>Pavan Gowda C B | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080b14;--panel:#101625;--panel2:#131d30;--text:#eef3ff;--muted:#9aa8bf;--line:rgba(163,184,216,.14);--cyan:#75e4ee;--blue:#8b9cff;--green:#a8f0c6;--max:1120px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}body{font-family:Manrope,system-ui,sans-serif;background:radial-gradient(ellipse at 12% 5%,rgba(66,100,180,.16),transparent 34%),radial-gradient(ellipse at 90% 28%,rgba(55,180,190,.09),transparent 30%),var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(8,11,20,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:1.15rem;font-weight:800;letter-spacing:-.06em}.brand span{color:var(--cyan)}.navlinks{display:flex;gap:27px;list-style:none;color:var(--muted);font-size:.88rem;font-weight:600}.navlinks a{transition:color .2s}.navlinks a:hover{color:var(--cyan)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 11px;border-radius:9px}
+.hero{min-height:690px;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:50px;padding-top:75px;padding-bottom:90px}.eyebrow,.mono{font-family:"DM Mono",monospace;letter-spacing:.12em;text-transform:uppercase;font-size:.75rem;color:var(--cyan)}.eyebrow{display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:28px;height:1px;background:var(--cyan)}h1{font-size:clamp(3rem,7vw,5.8rem);line-height:1.03;letter-spacing:-.075em;margin:23px 0 18px}.gradient{background:linear-gradient(100deg,#fff 5%,#a7c5ff 48%,#75e4ee 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.role{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:700;color:#c5d2e8}.intro{max-width:650px;color:var(--muted);margin-top:17px;font-size:1.02rem}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:10px;border:1px solid var(--line);font-size:.9rem;font-weight:800;transition:transform .2s,border-color .2s,background .2s}.btn:hover{transform:translateY(-3px);border-color:var(--cyan)}.btn.primary{background:var(--cyan);color:#071016;border-color:var(--cyan)}.hero-card{position:relative;padding:28px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(22,34,57,.94),rgba(12,18,31,.88));box-shadow:0 25px 80px rgba(0,0,0,.25);animation:float 6s ease-in-out infinite}.hero-card:before{content:"";position:absolute;inset:-1px;border-radius:24px;padding:1px;background:linear-gradient(140deg,rgba(117,228,238,.5),transparent 45%,rgba(139,156,255,.35));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}.terminal-top{display:flex;gap:7px;margin-bottom:28px}.terminal-top i{width:8px;height:8px;border-radius:50%;background:#52627d}.terminal-top i:first-child{background:#ff8b8b}.terminal-top i:nth-child(2){background:#f3cf76}.terminal-top i:nth-child(3){background:#8ce0ae}.code-line{font: .86rem/2 "DM Mono",monospace;color:#aab9d2}.code-line b{color:var(--cyan);font-weight:400}.code-line .value{color:#c7d2ff}.availability{display:flex;align-items:center;gap:9px;margin-top:25px;color:#b9c8dc;font-size:.82rem}.dot{width:8px;height:8px;border-radius:50%;background:#8ce0ae;box-shadow:0 0 12px #8ce0ae}
+section{padding:90px 0}.section-head{margin-bottom:34px}.kicker{font: .72rem "DM Mono",monospace;color:var(--cyan);letter-spacing:.16em;text-transform:uppercase}.section-title{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.06em;line-height:1.2;margin-top:9px}.section-title span{color:var(--cyan)}.sub{color:var(--muted);max-width:680px;margin-top:12px}.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:25px}.surface{background:rgba(16,22,37,.78);border:1px solid var(--line);border-radius:18px;padding:27px}.surface p{color:var(--muted)}.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fact{padding:17px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.02)}.fact strong{display:block;font-size:1.25rem;color:var(--cyan)}.fact span{font-size:.78rem;color:var(--muted)}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.project{position:relative;overflow:hidden;background:linear-gradient(145deg,rgba(18,28,47,.95),rgba(12,17,29,.95));border:1px solid var(--line);border-radius:18px;padding:25px;transition:transform .25s,border-color .25s}.project:hover{transform:translateY(-6px);border-color:rgba(117,228,238,.5)}.project:after{content:"";position:absolute;width:160px;height:160px;border-radius:50%;background:rgba(117,228,238,.045);right:-65px;top:-75px;filter:blur(4px)}.project-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}.project-num{font: .72rem "DM Mono",monospace;color:#71829d}.status{font: .67rem "DM Mono",monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--green);border:1px solid rgba(168,240,198,.25);padding:5px 8px;border-radius:30px}.status.progress{color:#f1d28c;border-color:rgba(241,210,140,.25)}.project h3{font-size:1.25rem;margin-bottom:8px;letter-spacing:-.03em}.project p{font-size:.9rem;color:var(--muted);min-height:76px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin:17px 0}.tags span{font: .68rem "DM Mono",monospace;color:#b8c8e0;background:rgba(139,156,255,.09);border:1px solid rgba(139,156,255,.14);padding:5px 8px;border-radius:6px}.project-link{display:inline-flex;color:var(--cyan);font-size:.84rem;font-weight:800;margin-top:5px}.project-link:hover{text-decoration:underline}
+.academic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.semester{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:21px}.semester span{font: .7rem "DM Mono",monospace;color:var(--muted);text-transform:uppercase}.semester strong{display:block;font-size:2rem;letter-spacing:-.06em;margin-top:9px;color:var(--cyan)}.semester small{color:var(--muted)}.academic-note{margin-top:17px;color:var(--muted);font-size:.82rem}
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.skillbox{padding:22px;background:var(--panel);border:1px solid var(--line);border-radius:15px}.skillbox h3{font-size:1rem;margin-bottom:13px}.skillbox p{color:var(--muted);font-size:.87rem}.certs{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.certs span{border:1px solid var(--line);border-radius:30px;padding:8px 12px;color:#bdcbe0;font-size:.78rem}
+.contact{display:flex;justify-content:space-between;align-items:center;gap:25px;background:linear-gradient(120deg,rgba(27,48,71,.8),rgba(17,25,43,.8));border:1px solid var(--line);border-radius:22px;padding:35px}.contact p{color:var(--muted);margin-top:8px}.contact-links{display:flex;gap:10px;flex-wrap:wrap}footer{padding:28px 0;border-top:1px solid var(--line);color:#75839a;font-size:.8rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media(max-width:800px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:85px}.hero-card{max-width:520px}.about-grid{grid-template-columns:1fr}.academic-grid{grid-template-columns:repeat(2,1fr)}.skill-grid{grid-template-columns:1fr 1fr}.contact{align-items:flex-start;flex-direction:column}}
+@media(max-width:620px){.wrap{width:min(var(--max),calc(100% - 30px))}nav{height:auto;min-height:68px;flex-wrap:wrap;padding:15px 0}.menu{display:block}.navlinks{display:none;width:100%;padding:8px 0 12px;flex-direction:column;gap:13px}.navlinks.open{display:flex}.hero{padding-top:70px;padding-bottom:55px}section{padding:65px 0}.project-grid,.skill-grid{grid-template-columns:1fr}.project p{min-height:0}.contact{padding:25px}.academic-grid{gap:10px}.semester{padding:16px}.semester strong{font-size:1.7rem}}
+</style>
 </head>
 <body>
-
-<header>
-  <nav class="container">
-    <a class="logo" href="#home">Pavan.dev</a>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
+<header><nav class="wrap"><a class="brand" href="#home">Pavan<span>.</span>dev</a><button class="menu" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">Menu</button><ul class="navlinks" id="navlinks"><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#academics">Academics</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul></nav></header>
 <main>
-  <section class="hero container" id="home">
-    <div class="tag">HELLO, WORLD! I'M</div>
-    <h1>Pavan Gowda C B</h1>
-    <h2 class="accent">Computer Science Engineering Student</h2>
-    <p>
-      Passionate about software development, problem-solving and emerging
-      technologies. I enjoy building practical projects and continuously
-      learning new skills.
-    </p>
-    <div class="buttons">
-      <a class="btn primary" href="#projects">Explore My Work</a>
-      <a class="btn" href="#contact">Get In Touch</a>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title">About <span>Me</span></h2>
-      <p class="about-text">
-        I am a third-year Computer Science and Engineering student at
-        Seshadripuram Institute of Technology, Mysuru. I am interested in
-        software engineering, cloud technologies, cybersecurity and AI.
-        I enjoy learning by building projects and collaborating with others.
-      </p>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="container">
-      <h2 class="section-title">My <span>Skills</span></h2>
-      <div class="skills">
-        <span class="skill">C Programming</span>
-        <span class="skill">Python</span>
-        <span class="skill">Java</span>
-        <span class="skill">Data Structures</span>
-        <span class="skill">SQL</span>
-        <span class="skill">DBMS</span>
-        <span class="skill">OOP</span>
-        <span class="skill">Git & GitHub</span>
-        <span class="skill">Problem Solving</span>
-        <span class="skill">Cloud Computing</span>
-        <span class="skill">Cybersecurity</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="container">
-      <h2 class="section-title">Featured <span>Projects</span></h2>
-      <div class="grid">
-        <article class="card">
-          <h3>CareCircle</h3>
-          <p>A project focused on building a helpful digital experience.</p>
-          <a class="accent" href="https://github.com/Pavan-glitch-lab/CareCircle" target="_blank" rel="noopener">View on GitHub →</a>
-        </article>
-        <article class="card">
-          <h3>Weather Forecasting API</h3>
-          <p>A Python application that retrieves weather information using the OpenWeatherMap API.</p>
-        </article>
-        <article class="card">
-          <h3>Insurance Premium Calculator</h3>
-          <p>A Java application demonstrating object-oriented programming concepts.</p>
-        </article>
-        <article class="card">
-          <h3>Speech Scribe Buddy</h3>
-          <p>A speech-related project exploring useful voice-to-text functionality.</p>
-          <a class="accent" href="https://github.com/Pavan-glitch-lab/speech-scribe-buddy" target="_blank" rel="noopener">View on GitHub →</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title">Get In <span>Touch</span></h2>
-      <p class="about-text">
-        Interested in collaborating, discussing technology or sharing opportunities?
-        Feel free to connect with me.
-      </p>
-      <div class="contact-links">
-        <a class="btn" href="mailto:pavangowdacb1@gmail.com">Email Me</a>
-        <a class="btn" href="https://github.com/Pavan-glitch-lab" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/pavangowdacb/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-  </section>
+<section class="hero wrap" id="home">
+<div class="reveal"><div class="eyebrow">Computer Science & Engineering</div><h1>Building ideas<br>into <span class="gradient">technology.</span></h1><div class="role">Hi, I'm Pavan Gowda C B.</div><p class="intro">A third-year CSE student at Seshadripuram Institute of Technology, Mysuru. Interested in software development, AI, cloud technologies and cybersecurity — with a focus on learning by building.</p><div class="actions"><a class="btn primary" href="#projects">Explore projects ↗</a><a class="btn" href="mailto:pavangowdacb1@gmail.com">Let's connect</a></div></div>
+<div class="hero-card reveal"><div class="terminal-top"><i></i><i></i><i></i></div><div class="code-line"><b>const</b> developer = {</div><div class="code-line">&nbsp; name: <span class="value">'Pavan Gowda C B'</span>,</div><div class="code-line">&nbsp; focus: <span class="value">'Software + AI'</span>,</div><div class="code-line">&nbsp; learning: <span class="value">'Every day'</span>,</div><div class="code-line">&nbsp; build: <span class="value">'Useful things'</span></div><div class="code-line">};</div><div class="availability"><span class="dot"></span> Open to learning and collaboration</div></div>
+</section>
+<section id="about"><div class="wrap reveal"><div class="section-head"><div class="kicker">01 / About</div><h2 class="section-title">A little <span>about me</span></h2></div><div class="about-grid"><div class="surface"><p>I'm pursuing a B.E. in Computer Science and Engineering at Seshadripuram Institute of Technology, Mysuru. I enjoy exploring how software, AI and security can solve practical problems. I have worked on academic projects, prototypes and hackathon builds, and I’m continually strengthening my foundations in programming and problem-solving.</p></div><div class="facts"><div class="fact"><strong>3rd Year</strong><span>B.E. Computer Science</span></div><div class="fact"><strong>2028</strong><span>Expected graduation</span></div><div class="fact"><strong>AI + Security</strong><span>Areas of interest</span></div><div class="fact"><strong>Mysuru</strong><span>Karnataka, India</span></div></div></div></div></section>
+<section id="projects"><div class="wrap"><div class="section-head reveal"><div class="kicker">02 / Selected work</div><h2 class="section-title">Projects that <span>keep me building</span></h2><p class="sub">A selection of research work, prototypes, hackathon builds and ongoing projects.</p></div><div class="project-grid">
+<article class="project reveal"><div class="project-top"><span class="project-num">PROJECT / 01</span><span class="status">Research prototype</span></div><h3>TrustGuard — AI Oversight</h3><p>A risk-aware human oversight framework for safer autonomous AI agents. Evaluates actions across privacy, financial risk, data modification, irreversibility and external impact.</p><div class="tags"><span>Python</span><span>Streamlit</span><span>AI Safety</span><span>Risk Scoring</span></div><span class="project-link">Research paper accepted by JRITM</span></article>
+<article class="project reveal"><div class="project-top"><span class="project-num">PROJECT / 02</span><span class="status">Hackathon build</span></div><h3>CareCircle</h3><p>A care-focused digital platform built during the CATALYST Solo AI Hackathon, with a live deployed demo.</p><div class="tags"><span>Web Development</span><span>AI Hackathon</span><span>Deployment</span></div><a class="project-link" href="https://carecircle-7m1j.onrender.com" target="_blank" rel="noopener">Live demo ↗</a><br><a class="project-link" href="https://github.com/Pavan-glitch-lab/CareCircle" target="_blank" rel="noopener">GitHub repository ↗</a></article>
+<article class="project reveal"><div class="project-top"><span class="project-num">PROJECT / 03</span><span class="status progress">In progress</span></div><h3>Multimodal Deepfake Detection</h3><p>A mini-project exploring image, video, audio and transcript signals to detect possible identity impersonation and cyber fraud, with evidence and a confidence score.</p><div class="tags"><span>Multimodal AI</span><span>Deepfake Detection</span><span>Cybersecurity</span></div></article>
+<article class="project reveal"><div class="project-top"><span class="project-num">PROJECT / 04</span><span class="status progress">Prototype</span></div><h3>Sovereign Agentic AI Workbench</h3><p>A team hackathon project exploring an on-premise agentic AI workbench with open-weight multimodal models, local retrieval, sandboxed tools and audit trails.</p><div class="tags"><span>Ollama</span><span>RAG</span><span>Agentic AI</span><span>On-premise</span></div><a class="project-link" href="https://github.com/Pradeepbeleri/aegis-prototype" target="_blank" rel="noopener">Team repository ↗</a></article>
+<article class="project reveal"><div class="project-top"><span class="project-num">PROJECT / 05</span><span class="status progress">In development</span></div><h3>eSim External Tool Manager</h3><p>A Python-based internship screening project to automate installation, version checking and management of external tools and dependencies used by eSim.</p><div class="tags"><span>Python</span><span>Automation</span><span>CLI</span></div></article>
+<article class="project reveal"><div class="project-top"><span class="project-num">PROJECT / 06</span><span class="status">GitHub project</span></div><h3>Speech Scribe Buddy</h3><p>A speech-focused application exploring voice-to-text functionality and a more accessible way to capture spoken content.</p><div class="tags"><span>Python</span><span>Speech</span><span>GitHub</span></div><a class="project-link" href="https://github.com/Pavan-glitch-lab/speech-scribe-buddy" target="_blank" rel="noopener">GitHub repository ↗</a></article>
+</div></div></section>
+<section id="academics"><div class="wrap reveal"><div class="section-head"><div class="kicker">03 / Academics</div><h2 class="section-title">Academic <span>performance</span></h2><p class="sub">Semester-wise SGPA from the academic records shared so far.</p></div><div class="academic-grid"><div class="semester"><span>Semester 01</span><strong>8.55</strong><small>SGPA</small></div><div class="semester"><span>Semester 02</span><strong>9.45</strong><small>SGPA</small></div><div class="semester"><span>Semester 03</span><strong>9.33</strong><small>SGPA</small></div><div class="semester"><span>Semester 04</span><strong>9.00</strong><small>SGPA</small></div></div><p class="academic-note">Subject-wise marks and the latest consolidated CGPA can be added after verification against your official VTU marksheets.</p></div></section>
+<section id="skills"><div class="wrap reveal"><div class="section-head"><div class="kicker">04 / Toolkit</div><h2 class="section-title">Skills & <span>learning</span></h2></div><div class="skill-grid"><div class="skillbox"><h3>Programming</h3><p>C · Python · Java · Data Structures · Object-Oriented Programming</p></div><div class="skillbox"><h3>Core CS</h3><p>SQL · DBMS · Problem Solving · Basic ARM Processor Concepts</p></div><div class="skillbox"><h3>Tools & Interests</h3><p>Git & GitHub · Cloud Computing · Cybersecurity · AI tools</p></div></div><div class="certs"><span>IBM Python Fundamentals</span><span>Infosys Springboard Python</span><span>GeeksforGeeks DSA</span><span>HackerRank Go (Basic)</span><span>MongoDB Learning Certificates</span><span>GitHub Secret Scanning</span><span>Google Cloud Skill Badges</span></div></div></section>
+<section id="contact"><div class="wrap reveal"><div class="contact"><div><div class="kicker">05 / Contact</div><h2 class="section-title">Let's build something <span>meaningful.</span></h2><p>Have an opportunity, project idea or just want to connect? Feel free to reach out.</p></div><div class="contact-links"><a class="btn primary" href="mailto:pavangowdacb1@gmail.com">Email me ↗</a><a class="btn" href="https://github.com/Pavan-glitch-lab" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/in/pavangowdacb/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></div></section>
 </main>
-
-<footer>
-  <p>© 2026 Pavan Gowda C B. Built with HTML & CSS.</p>
-</footer>
-
+<footer><div class="wrap footer-inner"><span>© 2026 Pavan Gowda C B</span><span>Designed with care · Built with HTML, CSS & JavaScript</span></div></footer>
+<script>
+const menuBtn=document.getElementById('menuBtn'),navlinks=document.getElementById('navlinks');
+menuBtn.addEventListener('click',()=>{const open=navlinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));});
+navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navlinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
 </body>
 </html>
