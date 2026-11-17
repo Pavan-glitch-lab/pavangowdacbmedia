@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pavan Gowda C B - Computer Science Engineering Student and Developer Portfolio">
+  <title>Pavan Gowda C B | Developer Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: #e8edf7;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1100px, 90%); margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: #0b1020ee; border-bottom: 1px solid #26304a;
+    }
+    nav {
+      min-height: 70px; display: flex;
+      align-items: center; justify-content: space-between; gap: 20px;
+    }
+    .logo { font-size: 21px; font-weight: bold; color: #65d5ff; }
+    nav ul { display: flex; gap: 22px; list-style: none; flex-wrap: wrap; }
+    nav a:hover, .accent { color: #65d5ff; }
+    .hero {
+      min-height: 570px; display: flex;
+      flex-direction: column; justify-content: center;
+      align-items: flex-start; padding: 90px 0;
+    }
+    .tag { color: #65d5ff; font-weight: bold; letter-spacing: 2px; }
+    h1 { font-size: clamp(38px, 7vw, 66px); line-height: 1.15; margin: 18px 0; }
+    .hero p { color: #aab6ce; max-width: 650px; font-size: 18px; }
+    .buttons { display: flex; gap: 14px; margin-top: 28px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: 11px 22px;
+      border: 1px solid #65d5ff; border-radius: 7px;
+      color: #65d5ff; font-weight: bold;
+    }
+    .btn.primary { background: #65d5ff; color: #08111f; }
+    section { padding: 65px 0; }
+    .section-title { font-size: 30px; margin-bottom: 25px; }
+    .section-title span { color: #65d5ff; }
+    .about-text { max-width: 800px; color: #b8c3d8; }
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #131c31; border: 1px solid #263653;
+      border-radius: 12px; padding: 22px;
+    }
+    .card h3 { color: #65d5ff; margin-bottom: 10px; }
+    .card p { color: #b8c3d8; }
+    .skills { display: flex; flex-wrap: wrap; gap: 12px; }
+    .skill {
+      background: #17243b; border: 1px solid #304663;
+      color: #bcecff; padding: 9px 16px; border-radius: 30px;
+    }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px; }
+    footer {
+      border-top: 1px solid #26304a; text-align: center;
+      padding: 25px; color: #94a3b8;
+    }
+    @media (max-width: 650px) {
+      nav { padding: 15px 0; align-items: flex-start; flex-direction: column; }
+      nav ul { gap: 12px; font-size: 14px; }
+      .hero { min-height: 480px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a class="logo" href="#home">Pavan.dev</a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero container" id="home">
+    <div class="tag">HELLO, WORLD! I'M</div>
+    <h1>Pavan Gowda C B</h1>
+    <h2 class="accent">Computer Science Engineering Student</h2>
+    <p>
+      Passionate about software development, problem-solving and emerging
+      technologies. I enjoy building practical projects and continuously
+      learning new skills.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="#projects">Explore My Work</a>
+      <a class="btn" href="#contact">Get In Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <p class="about-text">
+        I am a third-year Computer Science and Engineering student at
+        Seshadripuram Institute of Technology, Mysuru. I am interested in
+        software engineering, cloud technologies, cybersecurity and AI.
+        I enjoy learning by building projects and collaborating with others.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="skills">
+        <span class="skill">C Programming</span>
+        <span class="skill">Python</span>
+        <span class="skill">Java</span>
+        <span class="skill">Data Structures</span>
+        <span class="skill">SQL</span>
+        <span class="skill">DBMS</span>
+        <span class="skill">OOP</span>
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">Problem Solving</span>
+        <span class="skill">Cloud Computing</span>
+        <span class="skill">Cybersecurity</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <div class="grid">
+        <article class="card">
+          <h3>CareCircle</h3>
+          <p>A project focused on building a helpful digital experience.</p>
+          <a class="accent" href="https://github.com/Pavan-glitch-lab/CareCircle" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>Weather Forecasting API</h3>
+          <p>A Python application that retrieves weather information using the OpenWeatherMap API.</p>
+        </article>
+        <article class="card">
+          <h3>Insurance Premium Calculator</h3>
+          <p>A Java application demonstrating object-oriented programming concepts.</p>
+        </article>
+        <article class="card">
+          <h3>Speech Scribe Buddy</h3>
+          <p>A speech-related project exploring useful voice-to-text functionality.</p>
+          <a class="accent" href="https://github.com/Pavan-glitch-lab/speech-scribe-buddy" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <p class="about-text">
+        Interested in collaborating, discussing technology or sharing opportunities?
+        Feel free to connect with me.
+      </p>
+      <div class="contact-links">
+        <a class="btn" href="mailto:pavangowdacb1@gmail.com">Email Me</a>
+        <a class="btn" href="https://github.com/Pavan-glitch-lab" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/pavangowdacb/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Pavan Gowda C B. Built with HTML & CSS.</p>
+</footer>
+
+</body>
+</html>
